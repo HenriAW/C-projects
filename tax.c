@@ -5,7 +5,7 @@ float total = 0.0;
 short count = 0;
 short tax_percent = 6;
 
-float add_with_tax(float f);
+float add_with_tax(float f)
 {
 	float tax_rate = 1 + tax_percent / 100.0;
 	total = total + (f * tax_rate);
@@ -22,6 +22,6 @@ int main()
 		printf("Price of item: ");
 	}
 	printf("\nFinal total: %.2f\n", add_with_tax(val));
-	printf*"Number of items: %hi\n", count);
+	printf("Number of items: %hi\n", count);
 	return 0;
 }
